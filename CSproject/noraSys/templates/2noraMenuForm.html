@@ -1,0 +1,12 @@
+
+<p> Creación de menús </p> 
+
+<form action="" enctype="multipart/form-data"  method="POST">    {% csrf_token %}
+    
+    <table id='formularioS'>
+        {{form.as_table}}
+    </table>
+
+    <input type="submit" name="saveMenus" value="Guardar Menú">
+
+</form>

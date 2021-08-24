@@ -1,0 +1,21 @@
+
+<form id="formularioS" action="" enctype="multipart/form-data"  method="POST">    {% csrf_token %}
+    
+    {% for resultados in query_pedido %}
+        <table>
+        <thead>
+        <tr>
+            <td class="tg-0lax"> {{resultados.0}}  &nbsp </td>
+            <td class="tg-7vqn"> {{resultados.1}} &nbsp</td>
+            <td class="tg-0pky"> Opcion: {{resultados.2}} &nbsp</td>
+            <td class="tg-0pky"> Comentarios: {{resultados.3}} &nbsp</td>
+        </tr>
+        </thead>
+        </table>
+    {% endfor %}
+
+    <button id="sinUnderline" type="button">
+        <a href="/noraSysSuperUser"> Atras </a>    
+    </button>
+
+</form>

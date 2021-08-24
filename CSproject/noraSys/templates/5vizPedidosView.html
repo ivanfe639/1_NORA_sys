@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block encabezado %}
+    NORA SYSTEM: Visualización
+{% endblock %}
+
+{% block title %}  NORAsys {% endblock title %}
+
+{% block content %}
+
+{% for opciones in query_menu %}
+
+        <li id="formularioS"> 
+            <b>Opcion 1:</b> {{opciones.0}}             
+        </li>
+
+        <li id="formularioS"> 
+            <b>Opcion 2:</b> {{opciones.1}}
+        </li>
+
+        <li id="formularioS"> 
+            <b>Opcion 3:</b> {{opciones.2}}             
+        </li>
+
+        <li id="formularioS"> 
+            <b>Opcion 4:</b> {{opciones.3}}             
+        </li>
+
+    {% endfor %}
+
+
+
+{% include '5vizPedidosContent.html' %}
+
+{% endblock %}
+
+{% block pie %}
+    Todos los derechos reservados 
+{% endblock pie %}
+

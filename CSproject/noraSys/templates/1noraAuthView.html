@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block encabezado %}
+    NORA SYSTEM: Super Usuario
+{% endblock %}
+
+{% block title %}  NORAsys's  {% endblock title %}
+
+{% block content %}
+
+
+{% include '1noraAuthForm.html'  %}
+
+<p id='pequeS'> {{autorizacion}} </p> 
+
+{% endblock %}
+
+{% block pie %}
+    Todos los derechos reservados 
+{% endblock pie %}
+
+
+
+
+

@@ -1,0 +1,43 @@
+{% extends 'baseCliente.html' %}
+
+{% block encabezado %}
+    NORA SYSTEM: Clientes
+{% endblock %}
+
+{% block title %}  NORAsys {% endblock title %}
+
+{% block content %}
+
+<ul>
+        
+    {% for opciones in menuHoy %}
+
+        <li id="formularioS"> 
+            <b>Opcion 1:</b> {{opciones.1}}             
+        </li>
+
+        <li id="formularioS"> 
+            <b>Opcion 2:</b> {{opciones.2}}
+        </li>
+
+        <li id="formularioS"> 
+            <b>Opcion 3:</b> {{opciones.3}}             
+        </li>
+
+        <li id="formularioS"> 
+            <b>Opcion 4:</b> {{opciones.4}}             
+        </li>
+
+    {% endfor %}
+    
+    </ul>
+
+
+{% include '6seleccionClientesForm.html' %}
+
+{% endblock %}
+
+{% block pie %}
+    Todos los derechos reservados 
+{% endblock pie %}
+

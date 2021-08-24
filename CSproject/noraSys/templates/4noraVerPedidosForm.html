@@ -1,0 +1,12 @@
+
+<p> Seleccione una fecha para visualizar los pedidos realizados </p> 
+
+<form action="" enctype="multipart/form-data"  method="POST">    {% csrf_token %}
+    
+    <table id='formularioS'>
+        {{form.as_table}}
+    </table>
+
+    <input type="submit" name="visualizarPedidos" value="Ver Pedidos">
+
+</form>

@@ -1,0 +1,75 @@
+<style>
+#encabezado{
+  margin:0;
+  padding:0;
+  color:white;
+  font-size:30px;
+  text-align: center;
+  background-color: 0092F3;
+}
+
+
+#pieS{
+  margin:0;
+  padding:10;
+  font-size:5px;
+  color:white;
+  text-align: right;
+  background-color: 4EB8FF;
+}
+
+#sinUnderline{
+    text-decoration: none;
+}
+
+#cuerpo{
+  background-color: #BDC3C7;
+  font-size:30px;
+}
+
+#formularioS{
+  background-color: #BDC3Ca;
+  font-size:18px;
+  font-family:verdana;
+  text-align: left;
+  padding:10;  
+}
+
+#pequeS{
+  background-color: #BDC3Ca;
+  font-size:10px;
+  font-family:verdana;
+  text-align: left;
+  padding:10;  
+}
+
+
+
+
+</style>
+
+<html>
+    <head>
+        <h1 id='encabezado'>
+            {% block encabezado %} {% endblock %}
+        </h1>
+
+
+        <title>  
+            {% block title%}  {% endblock %}
+        </title>
+    </head>
+
+    <body id='cuerpo'> 
+    {% block content %}
+
+    {% endblock %}
+
+    </body>
+
+    <h1 id='pieS'>
+        {% block pie %}
+            
+        {% endblock pie %}
+    </h1>
+</html>

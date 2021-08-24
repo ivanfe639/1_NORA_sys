@@ -1,0 +1,11 @@
+
+
+<form action="" enctype="multipart/form-data"  method="POST">    {% csrf_token %}
+    
+    <table id='formularioS'>
+        {{form.as_table}}
+    </table>
+
+    <input type="submit" name="selClient" value="Confirmar pedido">
+
+</form>

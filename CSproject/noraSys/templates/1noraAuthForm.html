@@ -1,0 +1,12 @@
+
+<p> Menú de autenticación </p> 
+
+<form action="" method="POST">    {% csrf_token %}
+    
+    <table id='formularioS'>
+        {{form.as_table}}
+    </table>
+
+    <input type="submit" name='authNora' value="Comprobar">
+
+</form>
