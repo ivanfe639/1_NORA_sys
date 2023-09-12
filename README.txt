@@ -1,8 +1,6 @@
 
 Hola! como están!!
 
-Antes de todo quisiera dar una explicación corta del por qué no pude implementar las tareas asíncronas de Celery. Por cuestiones de versiones de cada una de las librerías y de restricciones de permisos del PC (la prueba la realicé en un PC prestado ya que el mío justo murió :/) el servidor de Celery no se podía iniciar, así que opte por realizar el reto desde cero y dejando la opción lista para cuando la configuración de Celery esté correcta. Una vez dicho esto pasemos al reto.
-
 El reto consistía en realizar una app donde un usuario con permisos pudiera crear el menú alimenticio de determinados días para que en otra vista los clientes pudieran realizar pedidos sobre ese menú y así facilitar la gestión de los almuerzos. La app la enfoque en dos vistas principales, la primera fue la vista del super usuario que por medio de una autenticación de credenciales pudiera entrar al menú de gestión donde se pueda realizar la creación de menús, ver los pedidos realizados y enviar un recordatorio a los clientes. Esta autenticación se realizó consultando a una base de datos donde se encuentran las credenciales de las únicas personas que pueden acceder y así evitar que cualquier persona pueda entrar al menú de gestión.
 
 La segunda vista que implementé fue la de clientes, la cual muestra el menú del día en curso si aún es posible hacer pedidos, en este caso antes de las 11:00 am (La hora máxima configurada es 20 para cuestiones de pruebas, esta constante se encuentra cómo LIMIT_HOUR en el archivo utils.py).
